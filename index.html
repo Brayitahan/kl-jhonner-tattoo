@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhonner Vargas — kl_jhonner Tattoo &amp; Piercing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@300;400;500&family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="page-skel" id="pageSkel">
+  <div class="skel-block skel-hero"></div>
+  <div class="skel-section">
+    <div class="skel-line skel-sm"></div>
+    <div class="skel-block skel-title"></div>
+    <div class="skel-grid">
+      <div class="skel-photo"></div>
+      <div class="skel-text">
+        <div class="skel-line"></div>
+        <div class="skel-line"></div>
+        <div class="skel-line skel-lg"></div>
+        <div class="skel-line"></div>
+        <div class="skel-line"></div>
+        <div class="skel-line skel-md"></div>
+      </div>
+    </div>
+  </div>
+  <div class="skel-section">
+    <div class="skel-line skel-sm"></div>
+    <div class="skel-block skel-title"></div>
+    <div class="skel-track">
+      <div class="skel-tile"></div>
+      <div class="skel-tile"></div>
+      <div class="skel-tile"></div>
+      <div class="skel-tile"></div>
+    </div>
+  </div>
+  <div class="skel-section">
+    <div class="skel-line skel-sm"></div>
+    <div class="skel-block skel-title"></div>
+  </div>
+</div>
+
+<header class="site-nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="#inicio" class="logo">KL</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg" id="heroVideo">
+    <source src="assets/video/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="hero-vignette"></div>
+  <div class="hero-fade"></div>
+
+  <p class="hero-tagline">Tattoo &amp; Piercing Shop — Marinilla, Antioquia. El tatuaje es arte que llevas contigo, incluso en los momentos más oscuros.</p>
+
+  <div class="hero-content">
+    <h1 class="hero-name">Jhonner<br>Vargas</h1>
+    <div class="hero-cta">
+      <a href="#trabajos" class="btn-link">Ver trabajos</a>
+      <a href="#contacto" class="btn-link">Contacto</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section class="about wrap" id="sobre-mi">
+    <p class="eyebrow reveal">01 — El artista</p>
+    <h2 class="section-title reveal">Sobre mí</h2>
+
+    <div class="about-grid reveal">
+      <div class="tile about-photo"><img src="assets/img/about-jhonner.jpg" alt="Retrato de Jhonner Vargas" class="real-photo " loading="lazy"></div>
+      <div class="about-text">
+        <p>Me llamo Jhonner Vargas, conocido en Instagram como <strong>@kl_jhonner</strong>. Tatúo en Marinilla, Antioquia, donde ofrezco servicio de tattoo &amp; piercing. Mi trabajo se mueve entre el fine line, el blackwork y las piezas geométricas, con incursiones en color y diseños de inspiración anime.</p>
+        <p>Cada pieza se piensa a la medida de quien la lleva. Desde un trazo minimalista en la espalda hasta una manga completa en blackwork, cuido cada línea para que el resultado sea limpio, personal y hecho para durar.</p>
+      </div>
+    </div>
+
+    <p class="about-statement reveal">¿Listo para dejar tu marca? Entonces soy tu artista.</p>
+  </section>
+
+  <section class="works wrap" id="trabajos">
+    <div class="works-head reveal">
+      <div>
+        <p class="eyebrow">02 — Galería</p>
+        <h2 class="section-title">Trabajos</h2>
+      </div>
+      <p class="works-note">En cada línea, en cada trazo — técnica y carácter. Mis tatuajes son tu esencia en su forma más pura.</p>
+    </div>
+
+    <div class="works-filters reveal" role="group" aria-label="Filtrar galería">
+      <div class="filter-row">
+        <span class="filter-row-label">Estilo</span>
+        <div class="filter-pills" id="styleFilters">
+          <button class="pill is-active" data-style-filter="all">Todos</button>
+          <button class="pill" data-style-filter="fine-line">Fine line</button>
+          <button class="pill" data-style-filter="blackwork">Blackwork</button>
+          <button class="pill" data-style-filter="color">Color</button>
+          <button class="pill" data-style-filter="anime">Anime</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-row-label">Género</span>
+        <div class="filter-pills" id="genderFilters">
+          <button class="pill is-active" data-gender-filter="all">Todos</button>
+          <button class="pill" data-gender-filter="hombre">Hombres</button>
+          <button class="pill" data-gender-filter="mujer">Mujeres</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="works-empty" id="worksEmpty" hidden>No hay piezas con esta combinación todavía — probá otro filtro.</p>
+
+    <div class="works-track reveal" id="worksTrack">
+      <div class="tile" data-style="fine-line" data-gender=""><img src="assets/img/galeria-01-fineline-floral.jpg" alt="Tatuaje fine line floral en columna" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="blackwork" data-gender=""><img src="assets/img/galeria-02-blackwork-mariposa.jpg" alt="Tatuaje blackwork de mariposa" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="color" data-gender=""><img src="assets/img/galeria-03-color-dragon.jpg" alt="Tatuaje de dragón a color" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="fine-line" data-gender=""><img src="assets/img/galeria-04-fineline-flor.jpg" alt="Tatuaje fine line de flor" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="blackwork" data-gender=""><img src="assets/img/galeria-05-blackwork-calavera.jpg" alt="Manga blackwork de calavera" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="fine-line" data-gender=""><img src="assets/img/galeria-06-fineline-zorro.jpg" alt="Tatuaje fine line de zorro" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="fine-line" data-gender=""><img src="assets/img/galeria-07-fineline-polilla.jpg" alt="Tatuaje fine line de polilla" class="real-photo " loading="lazy"></div>
+      <div class="tile" data-style="anime" data-gender=""><img src="assets/img/galeria-08-anime.jpg" alt="Tatuaje estilo anime" class="real-photo " loading="lazy"></div>
+    </div>
+
+    <div class="works-controls reveal">
+      <button id="prevBtn" aria-label="Anterior">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button id="nextBtn" aria-label="Siguiente">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="services wrap" id="servicios">
+    <p class="eyebrow reveal">03 — Qué ofrezco</p>
+    <h2 class="section-title reveal">Servicios</h2>
+
+    <div class="services-grid reveal">
+      <div class="tile services-photo"><img src="assets/img/services-detalle.jpg" alt="Detalle de tatuaje en proceso" class="real-photo " loading="lazy"></div>
+
+      <div class="services-list">
+        <div class="service-item">
+          <span class="service-num">01</span>
+          <div>
+            <p class="service-title">Tatuaje artístico</p>
+            <p class="service-desc">Diseños personalizados en distintos estilos: minimalismo, geometría, blackwork, realismo, acuarela y más. Convierto tu idea en una obra sobre tu piel.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <span class="service-num">02</span>
+          <div>
+            <p class="service-title">Diseño y boceto</p>
+            <p class="service-desc">Un enfoque personalizado para cada cliente. Creo bocetos únicos que resaltan tu individualidad.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <span class="service-num">03</span>
+          <div>
+            <p class="service-title">Cobertura de tatuajes</p>
+            <p class="service-desc">Renuevo o disimulo tatuajes antiguos utilizando técnicas modernas.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <span class="service-num">04</span>
+          <div>
+            <p class="service-title">Asesoría profesional</p>
+            <p class="service-desc">Conversamos a fondo tus ideas: estilo, ubicación en el cuerpo y cuidados posteriores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contacto">
+    <p class="eyebrow reveal">04 — Hablemos</p>
+    <h2 class="section-title reveal">Contacto</h2>
+
+    <div class="contact-grid reveal">
+      <div>
+        <div class="contact-block">
+          <p class="contact-label">Ubicación</p>
+          <p class="contact-value">Marinilla, Antioquia<br>Colombia</p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-label">Agenda tu cita</p>
+          <p class="contact-value">Instagram:<br><a class="btn-link" href="https://www.instagram.com/kl_jhonner/" target="_blank" rel="noopener">@kl_jhonner</a></p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-label">WhatsApp</p>
+          <p class="contact-value"><a class="btn-link" href="https://wa.me/573144100379" target="_blank" rel="noopener">+57 314 410 0379</a></p>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/kl_jhonner/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2.2.28 3 .58a6 6 0 0 1 2.2 1.43 6 6 0 0 1 1.43 2.2c.3.8.52 1.8.58 3 .06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.28 2.2-.58 3a6 6 0 0 1-1.43 2.2 6 6 0 0 1-2.2 1.43c-.8.3-1.8.52-3 .58-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-2.2-.28-3-.58a6 6 0 0 1-2.2-1.43 6 6 0 0 1-1.43-2.2c-.3-.8-.52-1.8-.58-3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.28-2.2.58-3A6 6 0 0 1 4.28 2.9a6 6 0 0 1 2.2-1.43c.8-.3 1.8-.52 3-.58C10.4 2.2 10.8 2.2 12 2.2Zm0 3a6.8 6.8 0 1 0 0 13.6 6.8 6.8 0 0 0 0-13.6Zm0 2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm7-2.6a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z"/></svg></a>
+          <a href="https://www.facebook.com/jhonner.vargas.2025?locale=es_LA" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.6h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46H16.6V4.3c-.26-.03-1.16-.1-2.2-.1-2.2 0-3.7 1.33-3.7 3.8v2.1H8.1v3h2.6V21h2.8Z"/></svg></a>
+          <a href="https://wa.me/573144100379" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2.1a9.9 9.9 0 0 0-8.5 15l-1 3.8 3.9-1a9.9 9.9 0 1 0 5.6-17.8Zm0 1.8a8.1 8.1 0 1 1-4.2 15l-.3-.2-2.4.6.6-2.3-.2-.3A8.1 8.1 0 0 1 12 3.9Zm-2.7 4a.9.9 0 0 0-.7.3c-.2.3-.9 1-.9 2.3s.9 2.6 1 2.8c.1.2 1.8 2.8 4.4 3.8 2.2.9 2.6.7 3.1.6.5 0 1.6-.6 1.8-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.4l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.8c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4Z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="form-title">¡Empecemos!</p>
+        <form id="contactForm">
+          <input class="field" type="text" placeholder="Tu nombre" required>
+          <input class="field" type="tel" placeholder="Tu teléfono" required>
+          <input class="field" type="email" placeholder="Tu correo" required>
+          <textarea class="field" placeholder="Cuéntame tu idea" rows="4"></textarea>
+          <button type="submit" class="submit-btn">Enviar</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <a href="#inicio" class="logo">kl_jhonner</a>
+  <nav class="nav-links">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <p class="copyright">© 2026 Jhonner Vargas — kl_jhonner Tattoo &amp; Piercing. Todos los derechos reservados.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
